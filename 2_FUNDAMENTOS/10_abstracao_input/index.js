@@ -1,5 +1,5 @@
 const inquirer = require('inquirer')
-const chalk = require("chalk")
+const chalk = require('chalk')
 
 inquirer.prompt([{
     name: 'p1', 
