@@ -13,3 +13,6 @@ inquirer.prompt([{
     console.log(chalk.bgYellow.black.bold(`O nome é [${nome}] e a idade é [${idade}]`))
 }).catch((err) => console.log(err))
 
+
+
+
