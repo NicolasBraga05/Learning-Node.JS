@@ -1,0 +1,19 @@
+body {
+    background-image: url(../img/imagemdefundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto {
+    text-align: center;
+}
+
+.branco {
+    color: #faf8f8;
+    text-align: center;
+}
+
+.cinza {
+    color: azure;
+    text-align: center;
+}

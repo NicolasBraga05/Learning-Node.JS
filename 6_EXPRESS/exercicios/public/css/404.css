@@ -1,0 +1,14 @@
+body {
+    background-image: url(../img/error404.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8em;
+    background-position: top;
+}
+
+
+
+a {
+    font-size: 30px;
+    color: red;
+}
