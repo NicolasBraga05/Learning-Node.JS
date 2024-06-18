@@ -46,6 +46,16 @@ app.post('/users/create', (req, res) => {
     res.redirect('/')
 })
 
+app.get('/users/:id', async (req, res) => {
+    const id = req.params.id
+
+    const user = await User.findOne({ raw: true, where: {id: id}})
+
+    res.render('userview', {user})
+
+
+})
+
 app.get('/',  async (req, res) => {
 
     const users = await User.findAll({raw: true})

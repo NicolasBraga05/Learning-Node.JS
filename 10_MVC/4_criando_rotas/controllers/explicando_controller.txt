@@ -1,0 +1,3 @@
+- É onde temos a interação entre Model e View;
+- Podemos definir qual view será impressa, processar dados que foram enviados para o banco ou para a view;
+- Os Controllers terão um codigo parecido com as rotas, que estamos criando até então no curso;

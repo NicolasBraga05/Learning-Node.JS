@@ -1,0 +1,5 @@
+ - É uma camada onde vamos interagir com o banco de dados (insert, update, delete, read);
+ - Normalmente interage com os arquivos do Controller;
+ - Resposavel por resgatar, atualizar, remover e criar dados;
+ - É comum que cada tabela seja um Model, assim como fazemos com o setup do Sequelize;
+ - Os models são quem controlam a arquitetura do sistema, é facil entender a regra de negocios analisando eles;

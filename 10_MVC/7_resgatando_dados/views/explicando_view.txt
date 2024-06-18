@@ -1,0 +1,5 @@
+- É onde apresentamos os dados que estão no banco;
+- Geralmente a view interage com o controller, que é o meio de campo;
+- E tambem nas views temos a interação com o usuario, como formularios para inserir dados no sistema;
+- É correto não haver lógica/regra de negocios na view, ou no minimo possivel;
+- Normalmente a exibição é feita atraves do HTML;
