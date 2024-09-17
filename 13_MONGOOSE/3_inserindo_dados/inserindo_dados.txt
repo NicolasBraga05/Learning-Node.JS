@@ -1,0 +1,3 @@
+Para inserir dados vamos utilizar o método save de Mongoose;
+Este método é da própria biblioteca, ou seja, não vamos utilizar o do nosso Model, que usamos no MongoDB;
+O restante fica bem parecido, passamos os dados a serem inseridos em um objeto para save;

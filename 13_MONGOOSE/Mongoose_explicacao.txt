@@ -1,0 +1,7 @@
+O que é Mongoose?
+
+Mongoose é a ODM mais utilizada para MongoDB;
+Onde declaramos um Model, que faz as interações com a collection que ele corresponde;
+Definimos nesse Model os dados e seus tipos, como estamos esperando que a collection fique;
+Isso se assemelha ao SQL, que ajuda na organização/manuntenção;
+Como nas ORMs temos métods prontos para a interação com o DB;

@@ -1,0 +1,3 @@
+Para preencher o formulario de edição vamos utilizar novamente o findById;
+O método lean nos ajuda a receber dados para o Handlebars;
+E pronto, nosso codigo ja se adapta aos processos;

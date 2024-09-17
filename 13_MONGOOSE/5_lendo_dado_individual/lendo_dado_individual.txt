@@ -1,0 +1,4 @@
+Para encontrar um unico item vamos utilizar o metodo findById;
+Neste caso não precisamos converter o id para o padrao do MongoDB, o Mongoose faz isso para nós;
+E tambem utilizaremos o lean novamente;
+

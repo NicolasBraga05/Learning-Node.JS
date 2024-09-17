@@ -1,0 +1,3 @@
+Obs: para resolver um warning vamos colocar as rotas em /products;
+Depois basta utilizar o método updateOne, onde passamos um filtro para atingir o registro correto;
+E tambem um objeto com os dados de atualização;

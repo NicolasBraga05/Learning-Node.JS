@@ -1,0 +1,3 @@
+Para remover um dado utilizaremos o metedo deleteOne;
+Que leva simplesmente o filtro como argumento, neste caso utilizaremos o _id;
+Depois basta redirecionar o usuario;

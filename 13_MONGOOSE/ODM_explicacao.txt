@@ -1,0 +1,7 @@
+O que é ODM?
+
+Um acrônimo para Object Data Mapping, ou seja, mapeamento de dados pro objetos;
+Em MongoDB utilizamos ODMs para deixar mais ágil o processo de trabalho com os dados;
+Basicamente um Model ficará responsável pelas interações com um BD;
+A ODM mais utilizada para MongoDB é a Mongoose;
+ORM e ODM tem funções e utilizações muito semelhantes;

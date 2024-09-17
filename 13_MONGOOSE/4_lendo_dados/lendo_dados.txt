@@ -1,0 +1,3 @@
+Para resgatar os dados vamos utilizar o método find do Mongoose;
+É necessario o método lean tambem para formatar os dados, de forma que o Handlebars consiga utilizar;
+Apenas com estas alterações já estamos prontos;

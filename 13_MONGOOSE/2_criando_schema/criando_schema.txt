@@ -1,0 +1,3 @@
+Agora vamos criar uma parte muito importante das aplicações que tem o Mongooose: o Schema;
+Que é um esqueleto do nosso elemento a ser inserido na collection;
+Vamos cria-lo no Model da aplicação;
