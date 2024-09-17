@@ -1,0 +1,3 @@
+Para remover um dado do banco, vamos utilziar o metodo deleteOne;
+Que recebe um filtro como no de resgatar dados, utilizaremos o campo _id;
+Basta executar o metodo no Controller e redirecionar após a remoção;

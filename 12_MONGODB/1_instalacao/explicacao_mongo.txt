@@ -1,0 +1,7 @@
+Database: é onde ficam as nossas collections e dados;
+
+Collections: são como as tabelas nos bancos relacionais, nelas vamos inserir dados;
+
+Documents: são os dados, no MongoDB tem esta nomenclatura;
+
+Colleticons podem ser criadas livremente a qualquer momentos e não possuem colunas fixas para os dados;

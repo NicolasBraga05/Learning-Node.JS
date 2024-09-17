@@ -1,0 +1,3 @@
+Para editar um dado, primeiramente vamos criar uma view que mostra o formulario preenchido;
+A ideia é parecida com a de getProduct do nosso projeto;
+Vamos utilizar o atributo value do input para preencher o campo com o valor salvo;
