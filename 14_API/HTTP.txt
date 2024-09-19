@@ -1,0 +1,7 @@
+Verbos HTTP
+
+Os verbos HTTP andam de mãos dadas com as APIs, e fazem parte do REST;
+Temos métodos como: GET, POST, PUT, DELETE, PATCH e etc;
+Cada um representa uma ação na API, ou seja, são essencias;
+É muito importante que as nossas funcionalidades usem os metodos corretos;
+Enviamos o metodo atraves da requisição;

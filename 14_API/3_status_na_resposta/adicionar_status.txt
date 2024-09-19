@@ -1,0 +1,7 @@
+
+Adicionando status na resposta
+
+Os status podem ajudar no desenvolvimento da nossa aplicação;
+Exibindo mensagens de sucesso ou erro, por exemplo;
+Precisamos entre res e o metodo json definir um numero de status HTTP;
+Isso é feito por meio do metodo status;

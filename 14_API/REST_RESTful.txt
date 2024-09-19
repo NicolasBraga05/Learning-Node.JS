@@ -1,0 +1,6 @@
+O que é REST e RESTful?
+
+REST significa Representional State Transfer ou Transferencia Representacional de Estado;
+Um estilo de arquitetura, que define como as APIs devem ser criadas;
+Seguindo todos os padrões a API é considerada RESTful
+Alguns dos pontos são: respostas uniformes, sem ligação de estado, cache de respostas e outros;
