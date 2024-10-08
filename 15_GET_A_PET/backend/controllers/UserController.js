@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken')
 // helpers
 const createUserToken = require('../helpers/create-users-token')
 const getToken = require('../helpers/get-token')
+const getUserByToken = require('../helpers/get-user-by-token')
 
 
 module.exports = class UserController{
@@ -88,7 +89,7 @@ module.exports = class UserController{
         }catch(error) {
             res.status(500).json({message: error})
         }
-        }
+    }
 
     static async login(req, res) {
 
@@ -134,6 +135,7 @@ module.exports = class UserController{
 
     static async checkUser(req, res) {
 
+
         let currentUser
 
         if(req.headers.authorization) {
@@ -141,15 +143,14 @@ module.exports = class UserController{
             const token = getToken(req)
             const decoded = jwt.verify(token, 'nossosecret')
 
-            currentUser = await User.findById(decoded.id)
+            currentUser = await User.findById(decoded.id, "-password")
 
             currentUser.password = undefined
 
         } else {
             currentUser = null
         }
-
-
+        
         res.status(200).send(currentUser)
     }
 
@@ -157,9 +158,9 @@ module.exports = class UserController{
 
         const id = req.params.id
 
-        const user = await User.findById(id)
+        const user = await User.findById(id).select('-password')
 
-        if(!id) {
+        if(!user) {
             res.status(400).json({
                 message: 'Usuario nao encontrado!'
             })
@@ -168,6 +169,99 @@ module.exports = class UserController{
 
         res.status(200).json({ user })
 
+    }
+
+    static async editUser(req, res) {
+
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        const regexPhone = /^\d{11}$/
+
+        const id = req.params.id
+
+        // check if users exists
+        const token = getToken(req)
+        const user = await getUserByToken(token)
+
+        const {name, email, phone, password, confirmpassword} = req.body
+
+        let image = ''
+
+        //validations
+        if(!name) {
+            res.status(422).json({message: 'O nome é obrigatorio!'})
+            return
+        }
+        user.name = name
+
+        if(!email) {
+            res.status(422).json({message: 'O email é obrigatorio!'})
+            return
+        }
+
+        // check if email has already taken
+        const userExists = await User.findOne({email: email})
+
+        if(user.email !== email && userExists){
+            res.status(422).json({
+                message: 'Por favor utilize outro email!'
+            })
+            return
+        }
+
+        user.email = email
+        
+        if(regexEmail.test(email)) {
+            
+        } else {
+            res.status(400).json({message: 'O email é invalido, confirme se o dominio esta correto, por exemplo: teste@dominio.com'})
+            return
+        }
+        if(!phone) {
+            res.status(422).json({message: 'O telefone é obrigatorio!'})
+            return
+        }
+
+        user.phone = phone
+
+        if(regexPhone.test(phone)) {
+            
+        } else {
+            res.status(400).json({message: 'O numero de telefone é invalido, confirme se esta e acordo por exemplo: 11860437564'})
+            return
+        }
+
+        if(password != confirmpassword) {
+            res.status(400).json({message: 'A senha e confirmação de senha precisam ser iguais!'})
+            return
+        } else if(password === confirmpassword && password != null) {
+
+            // creting password
+            const salt = await bcrypt.genSalt(12)
+            const passwordHash = await bcrypt.hash(password, salt)
+
+            user.password = passwordHash
+        }
+
+        try {
+
+            // returns user updated data
+            await User.findByIdAndUpdate(
+                {_id: user.id},
+                {$set: user},
+                {new: true},
+            )
+
+
+            res.status(200).json({
+                message: 'Usuario atualizado com sucesso!'
+            })
+
+        } catch(error) {
+            res.staus(500).json({
+                message: `Nao foi possivel realizar a atualização: ${error}`
+            })
+            return
+        }
     }
 }
 
