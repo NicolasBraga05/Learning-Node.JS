@@ -1,0 +1,86 @@
+.petlist_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.petlist_header h1 {
+    margin: 0;
+}
+
+.petlist_header a {
+    text-decoration: none;
+    background-color: #16479d;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+    padding: .5em .8em;
+    border-radius: 5px;
+    border: 2px solid #16479d;
+}
+
+.petlist_header a:hover {
+    background-color: transparent;
+    color: #16479d;
+}
+
+.petlist_container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.petlist_row {
+    border-bottom: 1px solid #16479d;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.petlist_row img {
+    margin-right: 1em;
+}
+
+.petlist_row span {
+    min-width: 100px;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+
+.actions a,
+.actions button {
+    text-decoration: none;
+    background-color: #fff;
+    color: #16479d;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 2px solid #16479d;
+    font-size: 12px;
+    margin-left: 1em;
+}
+
+.actions a:hover,
+.actions button:hover {
+    background-color: #16479d;
+    color: #fff;
+}
+
+.actions .conclude_btn {
+    color: #25b456;
+    border-color: #25b456;
+}
+
+.actions .conclude_btn:hover {
+    color: #fff;
+    background-color: #25b456;
+}
