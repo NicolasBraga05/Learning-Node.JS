@@ -1,0 +1,309 @@
+h1 {
+    color: red;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    cursor: pointer;
+    padding-top: 50px;
+}
+
+h3:hover{
+    color: black;
+    
+}
+
+h2 {
+    color: green;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+/* comentario */
+
+
+
+/* classes e id*/
+
+.p-texto {
+    color: green;
+    text-align: center;
+
+}
+
+#titulo-app {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+/* CORES */
+
+.nome {
+    color: orange;
+}
+
+.hexa {
+    color: #a4a43d;
+}
+
+.rgba {
+
+    color: rgba(13, 77, 335, 1);
+    font-size: 60px;
+}
+
+
+/* backgrounds */
+
+.div-background {
+    background-image: url('img/background.avif');
+    height: 300px;
+
+}
+
+.titulo-background {
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(15, 65, 65);
+}
+
+
+/* fontes */
+
+.family {
+    color: #000;
+    font-size: 40px;
+}
+
+.family.serif {
+    color: green;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* box model: padding */
+
+body {
+    margin: 0;
+}
+
+.boxmodel {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* geral */
+    /*padding: 20px;*/
+
+    /* especifico */
+    /*padding-bottom: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 90px;*/
+
+    /*especifico agrupado - top, right, left, bottom*/
+    /*padding: 30px 10px 40px 5px;*/
+
+    /*especifico agrupado 3 medidas - top, right-left, bottom*/
+    /*padding: 30px 20px 5 px;*/
+
+    /*especifico agrupado 2 medidas top-bottom, right-left*/
+    padding: 30px 20px;
+
+    /*border*/
+    border: 3px solid #000;
+    border-width: 5px 10px 2px 10px;
+    border-left: 5px solid violet;
+    border-right-style:  double;
+    border-width: 2px 10px;
+    border-radius: 100%;
+
+    /* margin */
+    margin: 100px;
+
+    /* displays */
+    /*display: none;*/
+    /*display: inline;*/
+    /*display: inline-block;*/
+    display: block;
+    
+    
+}
+
+.paragrafo_box {
+    margin: 0;
+}
+
+
+
+/*Positions*/
+/*static - flow no HTML, nao é alterado por top, right, left, bottom*/
+/*relative - flow no HTML, é alterado por top, right, left, bottom */
+/*fixed - posicionar em qualquer lugar da tela e é posicionada em relação ao HTML*/
+/*absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor*/
+/*sticky - flow no HTML, porem ao passar o scroll ela funciona como fixed*/
+
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    background-color: blue;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed {
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background-color: #a4a43d;
+    bottom: 0;
+    right: 0;
+}
+
+.absolute {
+    position: absolute;
+    background-color: purple;
+    right: 0;
+    top: 0;
+
+}
+
+.sticky {
+    position: sticky;
+    background-color: aquamarine;
+    top: 50px;
+}
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+    background-color: #000;
+}
+
+
+
+/* float */
+
+.container {
+    padding: 50px;
+}
+
+.div-float {
+    overflow: auto;
+}
+
+.img-float {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.float-right {
+    float: right;
+    
+}
+
+
+.p-float {
+    color: #000000;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*unidades de medidas*/
+
+.pixel-1{
+    background-color: #000000;
+    width: 100px;
+    height: 100px;
+}
+
+.pixel-2{
+    background-color: blue;
+    width: 500px;
+    height: 50px;
+}
+
+.pai-em {
+    font-size: 50px;
+}
+
+.em-1 {
+    width: .5em;
+    height: .5em;
+    background-color: purple;
+}
+
+html {
+    font-size: 20px;
+}
+
+.rem-1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: aqua;
+}
+
+.rem-2 {
+    font-size: 2rem;
+}
+
+
+.pai-porcentagem {
+    height: 500px;
+    width: 500px;
+    background-color: teal;
+}
+
+.porcentagem-1 {
+    width: 50%;
+    height: 50%;
+    background-color: #000;
+}
+
+.porcentagem-2 {
+    width: 50%;
+    height: 50%;
+    background-color: chartreuse;
+}
