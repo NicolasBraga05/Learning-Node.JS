@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f457952bc.js" 
+    crossorigin="anonymous"></script>
+    <title>Whatsapp Web Clone</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="toolbar-container">
+                <img class="user-foto" src="img/avatar1.png" alt="">
+                <div class="auxicons-toolbar-container">
+                    <i class="fas fa-spinner"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="notification-container">
+                <i class="fas fa-bell-slash"></i>
+                <p class="receive-notification">Receba notificações de novas mensagens</p>
+                <p class="active-notification">Ativar notificações na área de trabalho <i class="fas fa-angle-right"></i></p>
+            </div>
+            <div class="search-container">
+                <i id="contact-search" class="fas fa-search"></i>
+                <input type="text" name="search" id="search" placeholder="Procurar ou começar uma nova conversa">
+            </div>
+            <div class="contacts-container">
+                <div class="contact-box active-chat">
+                    <img class="user-foto" src="img/avatar2.png">
+                    <div class="user-info">
+                        <p class="user-name">namorada</p>
+                        <p class="user-messagepreview">
+                            <i class="fas fa-check-double"></i>
+                            te amo demais <i class="fa-solid fa-heart"></i>
+                            
+                        </p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">23:30</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img class="user-foto" src="img/avatar3.png">
+                    <div class="user-info">
+                        <p class="user-name">Pai</p>
+                        <p class="user-messagepreview">que orgulho de você meu filho</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">09:30</p>
+                        <p class="message-pending">2</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img class="user-foto" src="img/avatar4.png">
+                    <div class="user-info">
+                        <p class="user-name">Mãe</p>
+                        <p class="user-messagepreview">o almoço ta pronto filho</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">12:30</p>
+                        <p class="message-pending">3</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-container">
+            <nav class="chat-navbar">
+                <div class="contact-info-container">
+                    <img class="user-foto" src="img/avatar2.png">
+                    <p class="user-name">namorada</p>
+                </div>
+                <ul class="chattools-container">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-paperclip"></i></li>
+                    <li><i class="fas fa-ellipsis"></i></li>
+                    
+                </ul>
+            </nav>
+            <div class="messages-container">
+                <div class="bg-image"></div>
+                <div class="chat-messages">
+                    <p class="guest-message">Oi, bom dia</p>
+                    <p class="user-message">Oi, tudo bem?</p>
+                </div>
+            </div>
+            <div class="sendmessage-container">
+                <i class="far fa-grin"></i>
+                <input id="chatmessage" type="text" name="message" class="userinput" placeholder="Digite uma mensagem">
+                <i class="fas fa-microphone"></i>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
